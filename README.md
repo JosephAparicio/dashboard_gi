@@ -27,6 +27,18 @@ El dashboard presenta información crítica sobre las emisiones de Gases de Efec
 
 ---
 
+## 🚀 Cómo levantar el proyecto
+
+Para clonar y ejecutar el proyecto en modo desarrollo, sigue estos pasos:
+
+```bash
+git clone https://github.com/JosephAparicio/dashboard_gi.git
+cd <carpeta_del_proyecto>
+npm install
+npm run dev
+````
+---
+
 ## 🧭 Estructura General
 
 ### 🖼️ Introducción
