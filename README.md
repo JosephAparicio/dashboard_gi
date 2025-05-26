@@ -1,12 +1,77 @@
-# React + Vite
+# 🌱 Dashboard de Emisiones GHG
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es un **dashboard interactivo** desarrollado con **React**, **Tailwind CSS** y **Nivo** (para gráficos), diseñado como parte de una prueba técnica con enfoque en sostenibilidad, visualización de datos y buenas prácticas en desarrollo frontend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objetivo del Rediseño
 
-## Expanding the ESLint configuration
+El rediseño de este dashboard busca:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 💥 Ser **visual y atractivo** para nuevos usuarios.
+- 📈 Ser **escalable** para incluir más años y nuevas fuentes de emisión como agua, electricidad, transporte, etc.
+- 👀 Ser **fácil de leer y navegar**.
+- 📱 Ser **completamente responsivo** en distintos dispositivos.
+- ♿ Seguir **buenas prácticas de accesibilidad**.
+
+---
+
+## 📊 ¿Qué visualiza?
+
+El dashboard presenta información crítica sobre las emisiones de Gases de Efecto Invernadero (GHG):
+
+- 📅 **Total de emisiones GHG por año**
+- 📉 **Reducción porcentual y absoluta**
+- 🔍 **Emisiones por fuente y por alcance** (Scope 1, 2 y 3)
+- 🧭 **Escenarios proyectados hasta el año 2030**
+
+---
+
+## 🧭 Estructura General
+
+### 🖼️ Introducción
+- Una pantalla inicial animada a modo de presentación del proyecto.
+- **Objetivo**: dar una primera impresión al usuario la primera vez que ingresa.
+
+---
+
+### 📂 Sidebar de Navegación
+Organiza las vistas principales:
+
+- 🏠 **Principal**
+  - `Resumen general` y `Vista general` (actualmente muestran lo mismo, pero se diferenciarán en el futuro:  
+    > ✨ *"Vista general servirá para comparar múltiples años simultáneamente con filtros avanzados."*)
+
+- 🌍 **Emisiones**
+  - `Gases GHG` ✅ *(dashboard funcional ya implementado)*
+  - `Agua` 🔧
+  - `Energía` 🔧
+  - `Transporte` 🔧  
+  > 🧩 *Las rutas y estructuras están preparadas para estos dashboards, listos para integrar nuevos datos.*
+
+- 📈 **Análisis** 🚧 *(no implementado aún)*  
+  > 🧐 *Este módulo permitiría en un futuro aplicar modelos predictivos, simulaciones o análisis comparativos.*
+
+---
+
+## ⚙️ Tecnologías Utilizadas
+
+- ⚛️ **React** – Librería base para UI dinámica.
+- 💨 **Tailwind CSS** – Utilidad para diseño limpio y responsivo.
+- 📊 **Nivo** – Biblioteca para gráficos personalizados e interactivos.
+
+---
+
+## 🚧 Estado del Proyecto
+
+- `✅ Gases GHG`: implementado.
+- `🕐 Agua, Energía, Transporte`: rutas listas, visualización pendiente.
+- `📉 Análisis`: planeado para futura expansión.
+
+---
+
+## 📌 Notas Finales
+
+Este proyecto fue realizado como parte de una **prueba técnica** con enfoque en sostenibilidad y calidad visual.  
+Cada módulo está diseñado para escalar fácilmente, integrando datos dinámicos y adaptándose a nuevos requerimientos.
+
