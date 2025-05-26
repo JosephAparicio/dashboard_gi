@@ -56,9 +56,10 @@ Organiza las vistas principales:
 
 ## ⚙️ Tecnologías Utilizadas
 
-- ⚛️ **React** – Librería base para UI dinámica.
-- 💨 **Tailwind CSS** – Utilidad para diseño limpio y responsivo.
-- 📊 **Nivo** – Biblioteca para gráficos personalizados e interactivos.
+- ⚛️ **React** – Para construir una interfaz de usuario dinámica y reactiva, facilitando el manejo del estado y la composición de componentes.  
+- 💨 **Tailwind CSS** – Permite crear un diseño limpio, moderno y responsivo de forma rápida, con utilidades listas para usar sin necesidad de escribir CSS personalizado.  
+- 📊 **Nivo** – Utilizado para generar gráficos interactivos y visualizaciones de datos claras y personalizables en el dashboard.  
+- ✨ **GSAP** – Empleado en la introducción para crear animaciones fluidas e impactantes que mejoran la experiencia visual del usuario.
 
 ---
 
