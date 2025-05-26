@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 142.1 76.2% 36.3%;
+    --primary-foreground: 355.7 100% 97.3%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 142.1 76.2% 36.3%;
+    --radius: 0.5rem;
+
+    /* Environmental - GHG */
+    --ghg-100: #E8F5E9;
+    --ghg-200: #C8E6C9;
+    --ghg-300: #A5D6A7;
+    --ghg-400: #81C784;
+    --ghg-500: #66BB6A;
+    --ghg-600: #4CAF50;
+    --ghg-700: #43A047;
+    --ghg-800: #388E3C;
+    --ghg-900: #2E7D32;
+
+    /* Environmental - Water */
+    --water-100: #E3F2FD;
+    --water-200: #BBDEFB;
+    --water-300: #90CAF9;
+    --water-400: #64B5F6;
+    --water-500: #42A5F5;
+    --water-600: #1976D2;
+    --water-700: #1565C0;
+    --water-800: #0D47A1;
+    --water-900: #0D47A1;
+
+    /* Environmental - Energy */
+    --energy-100: #FFF8E1;
+    --energy-200: #FFECB3;
+    --energy-300: #FFE082;
+    --energy-400: #FFD54F;
+    --energy-500: #FFCA28;
+    --energy-600: #FBC02D;
+    --energy-700: #F9A825;
+    --energy-800: #F57F17;
+    --energy-900: #F57F17;
+
+    /* Environmental - Transport */
+    --transport-100: #FAFAFA;
+    --transport-200: #F5F5F5;
+    --transport-300: #EEEEEE;
+    --transport-400: #E0E0E0;
+    --transport-500: #BDBDBD;
+    --transport-600: #9E9E9E;
+    --transport-700: #757575;
+    --transport-800: #616161;
+    --transport-900: #424242;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 20% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 20% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 142.1 70.6% 45.3%;
+    --primary-foreground: 144.9 80.4% 10%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 20% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 142.4 71.8% 29.2%;
+  }
+}
+
+@layer utilities {
+  /* GHG */
+  .bg-ghg-100 { background-color: var(--ghg-100); }
+  .bg-ghg-200 { background-color: var(--ghg-200); }
+  .bg-ghg-300 { background-color: var(--ghg-300); }
+  .bg-ghg-400 { background-color: var(--ghg-400); }
+  .bg-ghg-500 { background-color: var(--ghg-500); }
+  .bg-ghg-600 { background-color: var(--ghg-600); }
+  .bg-ghg-700 { background-color: var(--ghg-700); }
+  .bg-ghg-800 { background-color: var(--ghg-800); }
+  .bg-ghg-900 { background-color: var(--ghg-900); }
+
+  /* Water */
+  .bg-water-100 { background-color: var(--water-100); }
+  .bg-water-200 { background-color: var(--water-200); }
+  .bg-water-300 { background-color: var(--water-300); }
+  .bg-water-400 { background-color: var(--water-400); }
+  .bg-water-500 { background-color: var(--water-500); }
+  .bg-water-600 { background-color: var(--water-600); }
+  .bg-water-700 { background-color: var(--water-700); }
+  .bg-water-800 { background-color: var(--water-800); }
+  .bg-water-900 { background-color: var(--water-900); }
+
+  /* Energy */
+  .bg-energy-100 { background-color: var(--energy-100); }
+  .bg-energy-200 { background-color: var(--energy-200); }
+  .bg-energy-300 { background-color: var(--energy-300); }
+  .bg-energy-400 { background-color: var(--energy-400); }
+  .bg-energy-500 { background-color: var(--energy-500); }
+  .bg-energy-600 { background-color: var(--energy-600); }
+  .bg-energy-700 { background-color: var(--energy-700); }
+  .bg-energy-800 { background-color: var(--energy-800); }
+  .bg-energy-900 { background-color: var(--energy-900); }
+
+  /* Transport */
+  .bg-transport-100 { background-color: var(--transport-100); }
+  .bg-transport-200 { background-color: var(--transport-200); }
+  .bg-transport-300 { background-color: var(--transport-300); }
+  .bg-transport-400 { background-color: var(--transport-400); }
+  .bg-transport-500 { background-color: var(--transport-500); }
+  .bg-transport-600 { background-color: var(--transport-600); }
+  .bg-transport-700 { background-color: var(--transport-700); }
+  .bg-transport-800 { background-color: var(--transport-800); }
+  .bg-transport-900 { background-color: var(--transport-900); }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Estilos para scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* En tu index.css o Tailwind personalizado */
+.bg-ghg-gradient {
+  background-image: linear-gradient(to bottom right, var(--ghg-100), var(--ghg-300), var(--ghg-500));
+}
+
+.bg-dashboard-gradient {
+  background-image: linear-gradient(to bottom right, var(--ghg-100), var(--ghg-300), var(--ghg-500));
+}
